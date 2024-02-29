@@ -1,0 +1,10 @@
+genrule(
+    name = "typescript",
+    srcs = [],
+    outs = ["javascript.zip"],
+    cmd = "touch javascript.zip",
+    tools = [
+        "@nodejs//:node_bin",
+    ],
+    visibility = ["//visibility:public"],
+)
